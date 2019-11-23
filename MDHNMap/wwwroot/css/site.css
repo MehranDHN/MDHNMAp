@@ -1,0 +1,179 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+
+@font-face {
+    font-family: 'IRBadr';
+    src: url('/lib/bootstrap/dist/fonts/irbadrregular.eot');
+    src: url('/lib/bootstrap/dist/fonts/irbadrregular.eot?#iefix') format('embedded-opentype'), url('/lib/bootstrap/dist/fonts/irbadrregular.woff2') format('woff2'), url('/lib/bootstrap/dist/fonts/irbadrregular.woff') format('woff'), url('/lib/bootstrap/dist/fonts/irbadrregular.ttf') format('truetype'), url('/lib/bootstrap/dist/fonts/irbadrregular.svg#irbadrregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRBadr';
+    src: url('/lib/bootstrap/dist/fonts/irbadrbold.eot');
+    src: url('/lib/bootstrap/dist/fonts/irbadrbold.eot?#iefix') format('embedded-opentype'), url('/lib/bootstrap/dist/fonts/irbadrbold.woff2') format('woff2'), url('/lib/bootstrap/dist/fonts/irbadrbold.woff') format('woff'), url('/lib/bootstrap/dist/fonts/irbadrbold.ttf') format('truetype'), url('/lib/bootstrap/dist/fonts/irbadrbold.svg#irbadrbold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRLotus';
+    src: url('/lib/bootstrap/dist/fonts/irlotusregular.eot');
+    src: url('/lib/bootstrap/dist/fonts/irlotusregular.eot?#iefix') format('embedded-opentype'), url('/lib/bootstrap/dist/fonts/irlotusregular.woff2') format('woff2'), url('/lib/bootstrap/dist/fonts/irlotusregular.woff') format('woff'), url('/lib/bootstrap/dist/fonts/irlotusregular.ttf') format('truetype'), url('/lib/bootstrap/dist/fonts/irlotusregular.svg#irlotusregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRLotus';
+    src: url('/lib/bootstrap/dist/fonts/irlotusbold.eot');
+    src: url('/lib/bootstrap/dist/fonts/irlotusbold.eot?#iefix') format('embedded-opentype'), url('/lib/bootstrap/dist/fonts/irlotusbold.woff2') format('woff2'), url('/lib/bootstrap/dist/fonts/irlotusbold.woff') format('woff'), url('/lib/bootstrap/dist/fonts/irlotusbold.ttf') format('truetype'), url('/lib/bootstrap/dist/fonts/irlotusbold.svg#irlotusbold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRMitra';
+    src: url('/lib/bootstrap/dist/fonts/irmitraregular.eot');
+    src: url('/lib/bootstrap/dist/fonts/irmitraregular.eot?#iefix') format('embedded-opentype'), url('/lib/bootstrap/dist/fonts/irmitraregular.woff2') format('woff2'), url('/lib/bootstrap/dist/fonts/irmitraregular.woff') format('woff'), url('/lib/bootstrap/dist/fonts/irmitraregular.ttf') format('truetype'), url('/lib/bootstrap/dist/fonts/irmitraregular.svg#irmitraregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRMitra';
+    src: url('/lib/bootstrap/dist/fonts/irmitrabold.eot');
+    src: url('/lib/bootstrap/dist/fonts/irmitrabold.eot?#iefix') format('embedded-opentype'), url('/lib/bootstrap/dist/fonts/irmitrabold.woff2') format('woff2'), url('/lib/bootstrap/dist/fonts/irmitrabold.woff') format('woff'), url('/lib/bootstrap/dist/fonts/irmitrabold.ttf') format('truetype'), url('/lib/bootstrap/dist/fonts/irmitrabold.svg#irmitrabold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'IRTerafik';
+    src: url('/lib/bootstrap/dist/fonts/irterafikregular.eot');
+    src: url('/lib/bootstrap/dist/fonts/irterafikregular.eot?#iefix') format('embedded-opentype'), url('/lib/bootstrap/dist/fonts/irterafikregular.woff2') format('woff2'), url('/lib/bootstrap/dist/fonts/irterafikregular.woff') format('woff'), url('/lib/bootstrap/dist/fonts/irterafikregular.ttf') format('truetype'), url('/lib/bootstrap/dist/fonts/irterafikregular.svg#irterafikregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRTerafik';
+    src: url('/lib/bootstrap/dist/fonts/irterafikbold.eot');
+    src: url('/lib/bootstrap/dist/fonts/irterafikbold.eot?#iefix') format('embedded-opentype'), url('/lib/bootstrap/dist/fonts/irterafikbold.woff2') format('woff2'), url('/lib/bootstrap/dist/fonts/irterafikbold.woff') format('woff'), url('/lib/bootstrap/dist/fonts/irterafikbold.ttf') format('truetype'), url('/lib/bootstrap/dist/fonts/irterafikbold.svg#irterafikbold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRTitr';
+    src: url('/lib/bootstrap/dist/fonts/irtitrregular.eot');
+    src: url('/lib/bootstrap/dist/fonts/irtitrregular.eot?#iefix') format('embedded-opentype'), url('/lib/bootstrap/dist/fonts/irtitrregular.woff2') format('woff2'), url('/lib/bootstrap/dist/fonts/irtitrregular.woff') format('woff'), url('/lib/bootstrap/dist/fonts/irtitrregular.ttf') format('truetype'), url('/lib/bootstrap/dist/fonts/irtitrregular.svg#irtitrregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRYekan';
+    src: url('/lib/bootstrap/dist/fonts/iryekanregular.eot');
+    src: url('/lib/bootstrap/dist/fonts/iryekanregular.eot?#iefix') format('embedded-opentype'), url('/lib/bootstrap/dist/fonts/iryekanregular.woff2') format('woff2'), url('/lib/bootstrap/dist/fonts/iryekanregular.woff') format('woff'), url('/lib/bootstrap/dist/fonts/iryekanregular.ttf') format('truetype'), url('/lib/bootstrap/dist/fonts/iryekanregular.svg#iryekanregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRYekan';
+    src: url('/lib/bootstrap/dist/fonts/iryekanbold.eot');
+    src: url('/lib/bootstrap/dist/fonts/iryekanbold.eot?#iefix') format('embedded-opentype'), url('/lib/bootstrap/dist/fonts/iryekanbold.woff2') format('woff2'), url('/lib/bootstrap/dist/fonts/iryekanbold.woff') format('woff'), url('/lib/bootstrap/dist/fonts/iryekanbold.ttf') format('truetype'), url('/lib/bootstrap/dist/fonts/iryekanbold.svg#iryekanbold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRNazanin';
+    src: url('/lib/bootstrap/dist/fonts/irnazaninregular.eot');
+    src: url('/lib/bootstrap/dist/fonts/irnazaninregular.eot?#iefix') format('embedded-opentype'), url('/lib/bootstrap/dist/fonts/irnazaninregular.woff2') format('woff2'), url('/lib/bootstrap/dist/fonts/irnazaninregular.woff') format('woff'), url('/lib/bootstrap/dist/fonts/irnazaninregular.ttf') format('truetype'), url('/lib/bootstrap/dist/fonts/irnazaninregular.svg#irnazaninregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRNazanin';
+    src: url('/lib/bootstrap/dist/fonts/irnazaninbold.eot');
+    src: url('/lib/bootstrap/dist/fonts/irnazaninbold.eot?#iefix') format('embedded-opentype'), url('/lib/bootstrap/dist/fonts/irnazaninbold.woff2') format('woff2'), url('/lib/bootstrap/dist/fonts/irnazaninbold.woff') format('woff'), url('/lib/bootstrap/dist/fonts/irnazaninbold.ttf') format('truetype'), url('/lib/bootstrap/dist/fonts/irnazaninbold.svg#irnazaninbold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRsans';
+    src: url('~/lib/bootstrap/dist/fonts/IRANSansLight.woff') format('woff'),url('/lib/bootstrap/dist/fonts/IRANSansLight.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'IRsans';
+    src: url('~/lib/bootstrap/dist/fonts/IRANSansMedium.woff') format('woff'),url('/lib/bootstrap/dist/fonts/IRANSansMedium.ttf') format('truetype');
+    font-weight: bold;
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+#map {
+    width: 100%;
+    height: 100vh;
+    font: 10pt irsans, Arial, Helvetica, sans-serif;
+}
+
+.lorem {
+    font-style: italic;
+    color: #AAA;
+}
+
+.popover {
+    max-width: 550px !important;
+    width: 450px;
+}
+
+.sidebar-content {
+    background-color: rgba(179, 173, 173, 0.95) !important;
+}
+
+.sidebar-tabs {
+    background-color: rgba(0, 60, 136, 0.75) !important;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}

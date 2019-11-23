@@ -1,0 +1,185 @@
+﻿
+@{
+    ViewData["Title"] = "Map";
+    Layout = "~/Views/Shared/_MapLayout.cshtml";
+}
+
+<div id="sidebar" class="sidebar collapsed" style="font-family:irsans">
+    <!-- Nav tabs -->
+    <div class="sidebar-tabs">
+        <ul role="tablist">
+            <li><a href="#motalebat" role="tab"><i class="fa fa-bars"></i></a></li>
+            <li><a href="#mosharekat" role="tab"><i class="fa fa-user"></i></a></li>
+            <li><a href="#sayer" role="tab"><i class="glyphicon glyphicon-book"></i></a></li>
+            @*<li class="disabled"><a href="#messages" role="tab"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="https://github.com/Turbo87/sidebar-v2" role="tab" target="_blank"><i class="fa fa-github"></i></a></li>*@
+        </ul>
+
+        <ul role="tablist">
+            <li><a href="#tasks" role="tab"><i class="glyphicon glyphicon-tasks"></i></a></li>
+            <li><a href="#settings" role="tab"><i class="fa fa-gear"></i></a></li>
+        </ul>
+    </div>
+
+    <!-- Tab panes -->
+    <div class="sidebar-content">
+        <div class="sidebar-pane" id="motalebat">
+            <h1 class="sidebar-header">
+                &nbsp;&nbsp;نقشه و لايه های دايناميک&nbsp;&nbsp;
+                <span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
+            </h1>
+            <div class="row">
+                <div id="MotalebatContents" class="col-md-12" style="direction:rtl;font-family:irsans">
+                </div>
+            </div>
+            <div class="row" style="background-color:#c00;color:#fff;font-size:14px;font-weight:700;">
+                <div class="col-md-10" id="motalebatTotal" style="text-align:center"></div>
+
+            </div>
+
+        </div>
+
+        <div class="sidebar-pane" id="mosharekat">
+            <h1 class="sidebar-header">&nbsp;&nbsp;لايه ها&nbsp;&nbsp;<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+            <div>
+                <div class="row">
+                    <div id="MosharekatContents" class="col-md-12" style="direction:rtl;font-family:irsans"></div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-pane" id="sayer">
+            <h1 class="sidebar-header">&nbsp;&nbsp;ساير موارد&nbsp;&nbsp;<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+            <div>
+                <div class="row">
+                    <div id="SayerContents" class="col-md-12" style="direction:rtl;font-family:irsans"></div>
+                </div>
+                <div class="row" style="background-color:#c00;color:#fff;font-size:14px;font-weight:700;">
+                    <div class="col-md-10" id="sayerTotal" style="text-align:center"></div>
+
+                </div>
+            </div>
+        </div>
+
+        @*<div class="sidebar-pane" id="messages">
+                <h1 class="sidebar-header">&nbsp;&nbsp;ساير مستندات<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+            </div>*@
+
+        <div class="sidebar-pane" id="tasks">
+            <h1 class="sidebar-header">&nbsp;&nbsp;سرويس ها<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+            <div class="panel-group" id="TaskAccordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#TaskAccordion" href="#TaskPanel1" style="font-family:irsans;font-weight:600">
+                                آخرين پيگيری های پروژه های مشارکتی
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="TaskPanel1" class="panel-collapse collapse in">
+                        <div class="panel-body" style="font-family:irsans;">
+                            ليست پيگيری ها ...
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#TaskAccordion" href="#TaskPanel2" style="font-family:irsans;font-weight:600">
+                                آخرين پيگيری های مطالبات
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="TaskPanel2" class="panel-collapse collapse">
+                        <div class="panel-body" style="font-family:irsans;">
+                            ليست پيگيری ها ...
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#TaskAccordion" href="#TaskPanel3" style="font-family:irsans;font-weight:600">
+                                آخرين پيگيری های ساير پروژه ها
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="TaskPanel3" class="panel-collapse collapse">
+                        <div class="panel-body" style="font-family:irsans;">
+                            ليست پيگيری ها ...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-pane" id="settings">
+            <h1 class="sidebar-header">&nbsp;&nbsp;معرفی<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+            <p>
+                جا نمايی و شناسنامه پروژه های مشارکتی و مطالبات شهرداری تهران منطقه شش در قالب اطلاعات مکانی و با قابليت مرور اطلاعات و شناسنامه پروژه ها با امکان بازديد ليست کامل اطلاعات به همراه همه فيلد های توصيفی پروژه ها و امکان درج گزارش و مستندات بازديد و پيگيری مراحل و وضعيت هر پروژه با ذکر تاريخ و مشخصات بازديد کننده .
+                همچنين در روی نقشه کليک بر روی هر يک از پروژه ها منجر به نمايش جزييات پروژه انتخاب شده با ذکر جزييات فيلد های پروژه و در پنل دوم امکان مرور همه يگيری های متناظر با پروژه انتخاب شده پيش بينی شده است .
+                لازم به توضيح است که همه پيگيری ها در ليستی که به ترتيب تاريخ و به صورت نزولی مرتب شده نشان داده خواهد شد . <br />
+                به منظور درج پيگيری جديد کافيست بر روی لينک درج پيگيری مجددا کليک نماييد .<br />
+                نقاط روی نقشه محاوره ای بوده و با انتخاب هر نقطه امکان بررسی جزييات پروژه متناظر با نقطه انتخاب شده وجود دارد . در فهرست اطلاعات مطالبات اعداد و ارقام همه در واحد ريال بوده و محاسبات مجموع ارقام همه در سيستم انجام شده است .
+                <br />
+                تهيه و اجرا در معاونت برنامه ريزی و توسعه شهری
+                <br />
+                مهرماه 1398
+            </p>
+            <a href="#" data-addmosharekat="true" class="btn btn-danger"><i class="glyphicon glyphicon-plus"></i>&nbsp;مشارکت</a>
+            <a href="#" data-addmotalebat="true" class="btn btn-danger"><i class="glyphicon glyphicon-plus"></i>&nbsp;مطالبات</a>
+            <a href="#" data-addsayer="true" class="btn btn-danger"><i class="glyphicon glyphicon-plus"></i>&nbsp;ساير</a>
+        </div>
+    </div>
+</div>
+<div id="map" class="sidebar-map">
+    <div id="detailsPopup" style="width: 550px;">
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/js/maplibrary.js"></script>
+<script>
+        var title = "سامانه مطالبات";
+        var map;
+        var objMap;
+        var settings = {
+            layers: {
+                _adminLevel10url: "",
+                _mosharekaturl: "",
+                _motalebaturl: "",
+                _sayerurl: ""
+            }
+        }
+        var MoneySeperator = (x) => {
+            if (x > 0) {
+                x = x.toString();
+                var pattern = /(-?\d+)(\d{3})/;
+                while (pattern.test(x))
+                    x = x.replace(pattern, "$1,$2");
+            }
+            return x;
+        };
+        var InitToastr = () => {
+            toastr.options.closeMethod = 'fadeOut';
+            toastr.options.closeDuration = 800;
+            toastr.options.closeEasing = 'swing';
+            toastr.options.progressBar = true;
+            //toastr.options.onShown = function () { console.log('hello'); }
+            //toastr.options.onHidden = function () { console.log('goodbye'); }
+            //toastr.options.onclick = function () { console.log('clicked'); }
+            //toastr.options.onCloseClick = function () { console.log('close button clicked'); }
+        };
+    var RenderMainMap = () => {
+        map = new R6Map(ol, settings);
+        map.InitMap((m) => {
+            objMap = m;
+        });
+    }
+    $(document).ready(function () {
+        InitToastr();
+        RenderMainMap();
+    });
+    </script>
+
+}
+
